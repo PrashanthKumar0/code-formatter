@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'monsterrat';
+    src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+
+body{
+    height: 100vh;
+    margin:0px;    
+    background: #111;
+    font-family: 'monsterrat';
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+
+*{
+    box-sizing: border-box;   
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    font-weight: bolder;
+    font-size: medium;
+    line-height: 1.7rem;
+    font-family: 'monsterrat';
+    resize:none;
+    width:80%;
+    height: 60%;
+    max-width: 540px;
+    max-height: 540px;
+    min-height: 250px;
+    min-width: 250px;
+    background: rgba(100,100,100,0.1);
+    border-radius:20px;
+    border:none;
+    padding:20px 30px;
+    outline: none;
+    color: tomato;
+    /* color: #ddd; */
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 30px #222;
+}
+
+button{
+    width:auto;
+    padding:12px 25px;
+    outline: none;
+    border:none;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background: rgba(100,100,100,0.1);
+    font-size: large;
+    font-weight: bolder;
+    color:tomato;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(100,100,100,0.2);
+    transition: 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+button:disabled{
+    opacity: 0.4;
+}
+
+button:disabled:hover{
+    transition:none;
+    color:tomato;
+    background: rgba(100,100,100,0.1);
+    box-shadow: 0px 0px 20px rgba(100,100,100,0.2);
+}
+
+button:disabled:active{
+    transform: scale(1);
+}
+button:hover{
+    
+    transition:0.2s cubic-bezier(1, 0.99, 0.71, -0.69);
+    color:#ddd;
+    background: tomato;
+    box-shadow: 0px 0px 20px tomato;
+}
+button:active{
+    transform: scale(0.95) rotateZ(-10deg);
+}
+
+.note{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-left:4px solid aqua;
+    max-width: 560px;
+    line-height: 1.8rem;
+    color:aquamarine;
+}
+
+
+
+img,
+canvas{
+    border:4px solid #ccc;
+    max-width: 500px;
+    margin:auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(100,100,100,0.2);
+}
+
+
+/* 
+    some vendor specific style
+*/
+
+::placeholder{
+    color:tomato;
+}
+::-moz-placeholder{
+    color:tomato;
+}
+::-ms-input-placeholder{
+    color:tomato;
+}
+
+::-webkit-input-placeholder{ 
+    color:tomato;
+}
+
+::-webkit-scrollbar{
+    width:6px;
+    background: rgba(100,100,100,0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: tomato;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner{
+    background: rgba(100,100,100,0.1);
+}

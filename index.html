@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slide_show.css">
+    <link rel="stylesheet" href="./css/seekbar.css">
+</head>
+<body>
+    <div id="slide_show">
+
+        <div class="wrapper">
+            <textarea id="code" placeholder="PASTE YOUR CODE HERE..." autofocus spellcheck="false"></textarea>
+            <button onclick="step(1)">Next &RightTeeArrow; </button>
+        </div>
+        <div class="wrapper">
+            <img src="" alt="Image Preview" id="image">
+            <input type="file" id="file" style="display:none">
+            
+            <button>
+                <label for="file">
+                    Select An Image
+                </label>
+            </button>
+
+            <button onclick="step(2);" id="fileSelectionDoneButton" disabled>Next &RightTeeArrow; </button> 
+        </div>
+        <div class="wrapper">
+            <h1>Set A Quality</h1>
+            
+            <!-- custom slider taken from my code of indo-music player with lil modification u could check that too -->
+            
+
+            <div id="canvasPreviewContiner">
+                <p class='note'>
+                    setting quality <b> very high </b> may result in increase in character per line.
+                    <br>
+                    setting quality <b> very low </b> may result in formatted code not being well resemble the original image
+                </p>    
+            </div>
+            
+            <div id="seekBar" class="flex">
+				<div id="seekTrack">
+					<div id="seekTrackFilled"></div>
+				</div>
+
+				<div id="seekTrackThumb"></div>
+			</div>
+
+            <br><br>
+            <button onclick="format(1);"> Preview? </button>
+            <br><br>
+            <button onclick="format();step(3);">Done &checkmark; </button> 
+        
+        </div>
+        <div class="wrapper">
+            <h1>Formatted Code</h1>
+            <textarea id="formatted"  spellcheck="false"></textarea>
+
+        </div>
+    </div>
+
+    <script src="js/slide_show.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

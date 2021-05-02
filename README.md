@@ -1,4 +1,4 @@
-# bf-code-formatter
+# bf-code-formatter (for now)
 
 <img src="./Screen Shots/Screenshot (21).png">
 

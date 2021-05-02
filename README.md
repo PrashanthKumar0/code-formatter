@@ -18,4 +18,4 @@ Here are some screen shots.
 
 # gh-page
 check out a live demo.
-<a href="">Click here</a>
+<a href="https://prashanthkumar0.github.io/code-formatter/">Click here</a>

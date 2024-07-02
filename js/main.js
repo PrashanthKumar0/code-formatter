@@ -51,8 +51,8 @@ function format(shouldDispCanvas=0){
         document.getElementById("canvasPreviewContiner").innerHTML="Loading Preview...";
     }
     var block=100-getSeekValue();
-    if(block<5){ //just in case
-        block=5;
+    if(block<1){ //just in case
+        block=1;
     }else if(block>100){
         block=100;
     }
